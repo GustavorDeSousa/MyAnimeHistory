@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterAccountViewController" customModule="MyAnimesHistory" customModuleProvider="target">
+            <connections>
+                <outlet property="btRegister" destination="BG3-CZ-hHE" id="Bk1-4N-as6"/>
+                <outlet property="selectGenero" destination="7Wk-Za-vTE" id="tSc-c2-aT2"/>
+                <outlet property="tfCelular" destination="6Oa-ES-LhG" id="sNb-bM-Sja"/>
+                <outlet property="tfEmail" destination="wR7-bR-9nC" id="R8T-wU-VN4"/>
+                <outlet property="tfNascimento" destination="TCA-dQ-1pf" id="P9r-w2-q82"/>
+                <outlet property="tfNome" destination="3PL-kG-MDb" id="O9b-ZQ-fJc"/>
+                <outlet property="tfPassword" destination="pcV-yJ-qZV" id="81r-LQ-JxD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iBn-Ne-PTc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PL-kG-MDb">
+                    <rect key="frame" x="20" y="74" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wR7-bR-9nC">
+                    <rect key="frame" x="20" y="124" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-yJ-qZV">
+                    <rect key="frame" x="20" y="174" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Oa-ES-LhG">
+                    <rect key="frame" x="20" y="224" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BG3-CZ-hHE">
+                    <rect key="frame" x="20" y="382" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="66N-VJ-puT"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="ClickRegisterAccount:" destination="-1" eventType="touchUpInside" id="J4h-II-AmJ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data Nascimento: " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCA-dQ-1pf">
+                    <rect key="frame" x="20" y="274" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Wk-Za-vTE">
+                    <rect key="frame" x="20" y="324" width="374" height="29"/>
+                    <segments>
+                        <segment title="masculino"/>
+                        <segment title="feminino"/>
+                        <segment title="outros"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Wk-Za-vTE" firstAttribute="trailing" secondItem="TCA-dQ-1pf" secondAttribute="trailing" id="0LR-bf-lmL"/>
+                <constraint firstItem="3PL-kG-MDb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0XR-F8-ATM"/>
+                <constraint firstItem="TCA-dQ-1pf" firstAttribute="leading" secondItem="6Oa-ES-LhG" secondAttribute="leading" id="2QM-cg-M4B"/>
+                <constraint firstItem="TCA-dQ-1pf" firstAttribute="trailing" secondItem="6Oa-ES-LhG" secondAttribute="trailing" id="7VA-eF-c9d"/>
+                <constraint firstItem="pcV-yJ-qZV" firstAttribute="leading" secondItem="wR7-bR-9nC" secondAttribute="leading" id="BDa-4M-HDS"/>
+                <constraint firstItem="6Oa-ES-LhG" firstAttribute="top" secondItem="pcV-yJ-qZV" secondAttribute="bottom" constant="20" id="Gn7-LX-KOc"/>
+                <constraint firstItem="7Wk-Za-vTE" firstAttribute="top" secondItem="TCA-dQ-1pf" secondAttribute="bottom" constant="20" id="HIx-U0-5Gv"/>
+                <constraint firstItem="pcV-yJ-qZV" firstAttribute="top" secondItem="wR7-bR-9nC" secondAttribute="bottom" constant="20" id="IUf-mo-YhJ"/>
+                <constraint firstItem="wR7-bR-9nC" firstAttribute="leading" secondItem="3PL-kG-MDb" secondAttribute="leading" id="Iw8-xz-EAI"/>
+                <constraint firstItem="BG3-CZ-hHE" firstAttribute="leading" secondItem="7Wk-Za-vTE" secondAttribute="leading" id="PM0-H3-QoX"/>
+                <constraint firstItem="7Wk-Za-vTE" firstAttribute="leading" secondItem="TCA-dQ-1pf" secondAttribute="leading" id="XBc-Sc-3TL"/>
+                <constraint firstItem="3PL-kG-MDb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="ZFt-9n-Hd6"/>
+                <constraint firstItem="wR7-bR-9nC" firstAttribute="trailing" secondItem="3PL-kG-MDb" secondAttribute="trailing" id="dpB-Su-UBf"/>
+                <constraint firstItem="6Oa-ES-LhG" firstAttribute="leading" secondItem="pcV-yJ-qZV" secondAttribute="leading" id="fR8-1I-rm9"/>
+                <constraint firstItem="wR7-bR-9nC" firstAttribute="top" secondItem="3PL-kG-MDb" secondAttribute="bottom" constant="20" id="l7g-sY-kJb"/>
+                <constraint firstItem="BG3-CZ-hHE" firstAttribute="trailing" secondItem="7Wk-Za-vTE" secondAttribute="trailing" id="lHa-Je-RpC"/>
+                <constraint firstItem="pcV-yJ-qZV" firstAttribute="trailing" secondItem="wR7-bR-9nC" secondAttribute="trailing" id="lTq-9x-yCA"/>
+                <constraint firstItem="6Oa-ES-LhG" firstAttribute="trailing" secondItem="pcV-yJ-qZV" secondAttribute="trailing" id="oBh-pa-lTi"/>
+                <constraint firstItem="BG3-CZ-hHE" firstAttribute="top" secondItem="7Wk-Za-vTE" secondAttribute="bottom" constant="30" id="pSe-xY-154"/>
+                <constraint firstItem="TCA-dQ-1pf" firstAttribute="top" secondItem="6Oa-ES-LhG" secondAttribute="bottom" constant="20" id="uLm-LJ-VKN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3PL-kG-MDb" secondAttribute="trailing" constant="20" id="yDu-Eg-7yZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
